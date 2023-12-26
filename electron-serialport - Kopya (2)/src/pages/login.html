@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giriş Ekranı</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body
+    class="flex flex-col justify-center items-center space-y-4 h-screen w-screen"
+  >
+    <div class="flex flex-col items-center space-y-4 h-96 w-72">
+      <!-- User Logo -->
+      <img
+        src="../assets/images/login.png"
+        alt=""
+        class="w-36 border-4 border-slate-500 rounded-full p-2"
+      />
+      <!-- Username input -->
+      <input
+        type="text"
+        placeholder="Kullanıcı adı"
+        class="border border-gray-500 px-2 w-72 h-10"
+        id="Name"
+      />
+      <!-- Password input -->
+      <div class="relative">
+        <input
+          type="password"
+          placeholder="Şifre"
+          class="border border-gray-500 pl-2 pr-8 w-72 h-10"
+          id="Password"
+        />
+        <button
+          class="absolute right-2 top-2"
+          onclick="passwordControl()"
+          id="eyeBtn"
+        >
+          <img
+            src="../assets/images/hidden.png"
+            class="hover:bg-slate-300 rounded-full p-1.5"
+          />
+        </button>
+      </div>
+      <!-- Remember me checkbox -->
+      <div class="flex flex-row justify-end h-auto w-full space-x-2">
+        <label for="remember" class="text-slate-600 select-none">
+          Beni hatırla</label
+        >
+        <input type="checkbox" id="remember" class="w-3.5" />
+      </div>
+      <!-- Login button -->
+      <button
+        class="select-none bg-slate-600 text-slate-200 rounded-lg w-28 h-10 active:w-24 active:h-6 active:text-sm font-semibold text-xl hover:text-slate-800 hover:bg-slate-400 transition-colors"
+      >
+        Giriş
+      </button>
+    </div>
+  </body>
+  <script src="../assets/js/login/index.js"></script>
+</html>

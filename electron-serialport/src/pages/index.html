@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Öğrenci Kontırol</title>
+    <style>
+      .deactiveBtn {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+      .activeBtn {
+        pointer-events: auto;
+        opacity: 1;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../assets/css/style.css" /> -->
+    <!-- <script src="../assets/js/jquery/jquery-3.7.1.slim.min.js"></script> -->
+  </head>
+
+  <body>
+    <select id="comPort"></select>
+    <button onclick="connectPort()" id="connectBtn" class="activeBtn">
+      Bağlan
+    </button>
+    <button onclick="closePort()" id="disconnectBtn" class="deactiveBtn">
+      Bağlantıyı kes
+    </button>
+    <button onclick="kontrol()">Konturol</button>
+    <button id="Kontırol">Konturol</button>
+    <p>test</p>
+  </body>
+  <script>
+    window.$ =
+      window.JQuery = require("../assets/js/jquery/jquery-3.7.1.min.js");
+  </script>
+  <script src="../assets/js/serial/index.js" async></script>
+  
+</html>
